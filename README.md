@@ -60,6 +60,8 @@ public class JhlLabel {
         or.setServerId(12);
         // 不要去写绝对路径，写相对路径，会根据数据库元数据信息获取bin log
         or.setBinlogFileName("mysql-bin.000118");
+        //mysql-bin.index不是binlog文件，是索引文件
+        or.setBinlogFileName("mysql-bin.000118");
         or.setBinlogPosition(4);
         or.setBinlogEventListener(event -> {
             // your code goes here
